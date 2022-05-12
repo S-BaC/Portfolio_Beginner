@@ -1,0 +1,47 @@
+Started on: 2:03 PM, 2022 May 12.
+
+Apps
+
+    YouNotes
+    https://github.com/S-BaC/YouNote/tree/main
+    https://s-bac.github.io/YouNote/
+
+    ClassWork
+    https://github.com/S-BaC/Class_Projects
+
+    Planner
+    https://github.com/S-BaC/Planner-Trender/tree/main
+    https://s-bac.github.io/Planner-Trender/
+
+    ChatScreenMaker
+    https://github.com/S-BaC/ChatScreen-Maker/tree/main
+    https://s-bac.github.io/ChatScreen-Maker/
+
+    ShareShelf
+    https://github.com/S-BaC/Share-Shelf/tree/main
+    https://s-bac.github.io/Share-Shelf/
+
+    Chat rooms (Not static, so not really working)
+    https://github.com/S-BaC/Chat-Rooms/tree/main
+    https://s-bac.github.io/Chat-Rooms/
+
+    JS String Methods
+    https://github.com/S-BaC/JS-String-Playground/tree/main
+    https://s-bac.github.io/JS-String-Playground/
+
+Games
+
+    Tic Tac Connect
+    https://github.com/S-BaC/Tic-Tac-Connect/tree/OOP-Stuffs
+    https://s-bac.github.io/Tic-Tac-Connect/
+
+    BlackJack
+    https://github.com/S-BaC/BlackJack/tree/main
+    https://s-bac.github.io/BlackJack/
+
+    Type Fast, Type Correct
+    https://github.com/S-BaC/Type-Fast-Type-Correct/tree/main
+    https://s-bac.github.io/Type-Fast-Type-Correct/
+
+    
+
