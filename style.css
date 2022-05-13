@@ -46,10 +46,11 @@ body{
     gap:2vmin;
     margin-top:5vh;
     width:900px;
-    height:600;
+    height:600px;
+   
 }
-#body{
-    background-color: var(--dark-sea-green);
+.homeBody{
+    background-image: linear-gradient(to right, #8ec187ff,rgb(127, 228, 114));
     width:100%;
     height:500px;
     border-radius: 5vmin;
@@ -62,6 +63,7 @@ body{
 .header{
     gap:3vw;
     width: 100%;
+
 }
 .profile{
     gap:5vw;
@@ -99,25 +101,26 @@ body{
 
 .tab1{
     background-color: var(--dark-sea-green);
+    background-image: linear-gradient(to right, #8ec187ff,rgb(127, 228, 114));
 }
 .tab2{
     background-color: var(--yellow-munsell);
+    /* background-image: linear-gradient(to right,rgb(255, 213, 59),rgb(228, 188, 46) ); */
 }
 .tab3{
     background-color: var(--sandy-brown);
+    /* background-image: linear-gradient(to right, #ee964bff, rgb(216, 129, 52)); */
 }
 /* HOME tab */
-.homePg{
+.homePg, .contactPg{
     width: 100%;
     height:100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    display:none !important;
 }
-@keyframes appear{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
+
 .col1{
     border-right: 0.5vmin dotted #eee;
     padding:3vmin 5vmin 5vmin 3vmin;
@@ -125,6 +128,9 @@ body{
 }
 .col2{
   padding:3vmin 5vmin 5vmin 3vmin;  
+}
+.col2 p{
+    color:#333;
 }
 .txtTitle{
     background-color: #eee;
@@ -138,20 +144,37 @@ body{
     line-height: 5vmin;
 }
 .items > li{
-    overflow: hidden;
     justify-content: flex-start;
     color:#333;
     font-weight: 600;
 }
 .txtDes{
     color:#eee;
-    width: 15vmin;
+    width: 20vmin;
 }
 .cvForm{
-    box-shadow: 0px 0px 5px #333;
     cursor: pointer;
-    padding:0 2.5vmin;
+    border-radius: 0;
     margin:0;
+    padding:1vmin;
+    background-color: var(--orange-web);
+    color:#eee;
+    font-weight: 600;
+    box-shadow: 1px 2px 3px #eee;
+}
+.cvForm:active{
+    transform: scale(0.8);
+    box-shadow: 0px 0px 0px #eee;
+}
+.projs{
+    margin-top: 3vmin;
+    width:10vmin;
+    height:10vmin;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 10vmin;
+    background-color: var(--verdigris);
+    color:#fff !important;
 }
 .imgDes{
     width:3.9vmin;
@@ -164,67 +187,92 @@ body{
     height:5vmin;
     margin: 1.5vmin 3vmin;
 }
-.progBG{
-    width:300px;
-    height:10px;
-    background-color: rgba(255, 255, 255, 0.247);
-    border-radius: 10px;
+.techStack{
+    gap:3vmin;
+    margin-bottom: 2vmin;
+
 }
-.progFG{
-    width:75%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    height:10px;
-    animation-duration: 2s;
-    animation-name: progressBarHTMLCSS;
-}
-@keyframes progressBarHTMLCSS{
-    0%{width:0;}
-    100%{width:75%;}
-}
-@keyframes progressBarJS{
-    0%{width:0;}
-    100%{width:80%;}
-}
-@keyframes progressBarJava{
-    0%{width:0;}
-    100%{width:39%;}
-}
-@keyframes progressBarPy{
-    0%{width:0;}
-    100%{width:50%;}
-}
-#htmlBar{
-    background-color: var(--orange-yellow-crayola);
-}
-#cssBar{
-    background-color: var(--columbia-blue);
-}
-#jsBar{
-    width:80%;
-    background-color: var(--yellow-munsell);
-    animation-name: progressBarJS;
-}
-#javaBar{
-    width:39%;
-    background-color: #ffffff;
-    animation-duration: 1s;
-    animation-name: progressBarJava;
-}
-#pythonBar{
-    width:51%;
-    background-color: var(--peach);
-    animation-duration: 1s;
-    animation-name: progressBarPy;
-}
-.otherTech{
-    margin-top: 1vmin;
-    justify-content: space-evenly;
-}
-.otherTech>img{
-    padding: 1vmin;
+.techStack p{
+   font-size: 1rem;
+   font-weight: 500;
+   color:#eee;
 }
 
 /* PROJECTS tab */
+.wrapper{
+    width:100%;
+    height:100%;
+    margin-top: 3vmin;
+    margin-left: auto;
+}
+.header{
+    justify-content: flex-end;
+
+}
+.tabs{
+    margin-right: 5vmin;
+
+}
+.profile{
+    display:none;
+}
+
+
+.projsWrapper{
+    margin-top: 2vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5vmin;
+    align-items: baseline;
+}
+.projImg{
+    height:18vw;
+    border-radius: 30px;
+    box-shadow: 0px 0px 2px #333;
+}
+.projTxt{
+    width:20vw;
+    height:18vw;
+    
+}
+.projDes{
+    flex-direction: column;
+}
+.projTitle{
+    margin: 3vmin 0;
+    padding:2vmin 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.projBtns{
+    width:100%;
+    gap:3vmin;
+    justify-content: flex-end;
+}  
+.projBtnImg{
+    width:2vw;
+}
+.projBtnImg:hover{
+    transform: scale(1.2);
+}
+.projBtnImg:active{
+    transform: scale(0.9);
+}
 
 /* CONTACT tab */
+.contactPg{
+    grid-template-columns: 1fr 5fr;
+}
+
+.contact{
+    gap:3vmin;
+    margin:10vmin;
+    justify-content: flex-start;
+}
+.contact p{
+    font-size: 2rem;
+}
+.imgContact{
+    width:10vmin;
+}

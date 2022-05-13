@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swun</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="jquery.js"></script>
-    <script defer src="app.js"></script>
+    <!-- <script defer src="jquery.js"></script>
+    <script defer src="app.js"></script> -->
 </head>
 <body class="flex">
     <div class="wrapper flex col">
@@ -23,85 +23,286 @@
         </div>
         
     </div>
-    <div id="body">
+    <!-- class="homeBody" -->
+    <div id="body" >
         <div class="homePg">
-            <div class="col1">
-                <p class="txtTitle"> PERSONAL </p>
+            <div class="col1 flex col">
                 <ul class="items">
                     <li class="flex"> <div class="txtDes">Name</div><span class="info">Swun Htet Oo</span></li>
                     <li class="flex"> <div class="txtDes">DOB</div><span class="info">18.08.1998</span></li>
                     <li class="flex"> <div class="txtDes">Nationality</div>
                         <span class="info">Myanmar</span></li>
                 </ul>
-                <p class="txtTitle"> EDUCATION </p>
-                <ul class="items">
-                    <li class="flex"> <div class="txtDes">Final Year</div>TU Mandalay</li>
-                    <li class="flex"> <div class="txtDes"></div>(Civil Engineering)</li>
-                    <li class="flex"> <div class="txtDes">Fresher</div>University of the People</li>
-                    <li class="flex"> <div class="txtDes"></div>(Computer Science)</li>
-                </ul>
+                
+                
+                <div class="flex col techStack">
+                    <div class="stack flex">
+                        <div class="flex">
+                            <img src="images/html-5.png" alt="" class="imgDes">
+                            <p>HTML</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/css-3.png" alt="" class="imgDes">
+                            <p>CSS</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/js.png" alt="" class="imgDes">
+                            <p>Javascript</p>
+                        </div>
+                    </div>
+                    <div class="stack flex ">
+                        <div class="flex">
+                        <div class=" javaWrapper flex">
+                            <img src="images/java.png" alt="" class="imgDes imgJava">
+                        </div>
+                        <p>Java</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/python.png" alt="" class="imgDes">
+                            <p>Python</p>
+                        </div>
+                    </div>
+                    <div class="stack flex ">
+                        <div class="flex">
+                            <img src="images/icons8-firebase-48.png" alt="" class="imgDes">
+                            <p>Firebase</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/icons8-jquery-50.png" alt="" class="imgDes">
+                            <p>JQuery</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="flex">
-                    <p class="txtTitle cvForm"> Download Full CV </p>
+                    <p class="txtTitle cvForm"> Full CV </p>
                 </div>
                 
             </div>
             <div class="col2">
-                <p class="txtTitle"> LANGUAGES </p>
-                <ul class="items">
-                    <li class="flex"> <div class="flex"><img src="images/html-5.png" alt="" class="imgDes"></div>
-                    <div class="progBG">
-                        <div id="htmlBar" class="progFG"></div>
-                    </div>
-                    </li>
-
-                    <li class="flex"> <div class="flex"><img src="images/css-3.png" alt="" class="imgDes"></div>
-                        <div class="progBG">
-                            <div id="cssBar" class="progFG"></div>
-                        </div>
-                    </li>
-
-                    <li class="flex"> <div class="flex"><img src="images/js.png" alt="" class="imgDes"></div>
-                        <div class="progBG">
-                            <div id="jsBar" class="progFG"></div>
-                        </div>
-                    </li>
-
-                    <li class="flex"> <div class=" javaWrapper flex">
-                        
-                    <img src="images/java.png" alt="" class="imgDes imgJava"></div>
-                        <div class="progBG">
-                            <div id="javaBar" class="progFG"></div>
-                        </div>
-                    </li>
-
-
-                    <li class="flex"> <div class="flex"><img src="images/python.png" alt="" class="imgDes"></div>
-                        <div class="progBG">
-                            <div id="pythonBar" class="progFG"></div>
-                        </div>
-                    </li>
-                </ul>
-
-                <p class="txtTitle"> OTHERS </p>
-                <div class="flex otherTech">
-                    <div class="flex">
-                        <img src="images/icons8-firebase-48.png" alt="" class="imgDes">
-                        <p>Firebase</p>
-                    </div>
-                    <div class="flex">
-                        <img src="images/icons8-jquery-50.png" alt="" class="imgDes">
-                        <p>JQuery</p>
-                    </div>
-                </div>
+                <p>Hi, thanks for checking out.</p>
+                <p>I'm a student of Computer Science and Web Development.</p>
+                <p>Please feel free to take a look at my projects (and maybe play a game or two?)</p>
+                <p>Have a great day!</p>
                 
+                <div class="flex">
+                    <p class="txtTitle cvForm projs"> Projects </p>
+                </div>
             </div>
 
         </div>
         <div class="projectsPg">
 
+            <div class="projsWrapper">
+                <div class="projCard flex col">
+                    <img class="projImg" src="images/TicTacConnect.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Tic-Tac-Connect &#128280;
+                        </div>
+                        <div class="projDes">
+                            Classic tic-tac-toe game with options to:
+                            <ul>
+                                <li>Customize board-size</li>
+                                <li>Play multiplayer mode</li>
+                                <li>Play signle player mode against two different levels.</li>
+                            </ul>
+                        </div>
+                        <div class="projBtns flex">
+                            <a href="https://github.com/S-BaC/Tic-Tac-Connect/tree/OOP-Stuffs" target="_blank">
+                                <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                            </a>
+                            <a href="https://s-bac.github.io/Tic-Tac-Connect/" target="_blank">
+                                <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/YouNotes.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            You_Notes &#128221;
+                        </div>
+                        <div class="projDes">
+                            A planner/notepad with functions including:
+                            <ul>
+                                <li>Setting Todo Lists and Projects</li>
+                                <li>Tracking progress</li>
+                                <li>Keeping a gratitude journal</li>
+                                <li>Recording "notes" and "themes"</li>
+                            </ul>
+                        </div>
+                    <div class="flex projBtns">
+                        <a href="https://github.com/S-BaC/YouNote/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                        <a href="https://s-bac.github.io/YouNote/" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/TypingGame.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Type Correct, Type Fast &#128187;
+                        </div>
+                        <div class="projDes">
+                            <p>Type a random set of characters and increase your score.</p>
+                            <p>Built-in stopwatch will record your score/time.</p>
+                        </div>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/Type-Fast-Type-Correct/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                        <a href="https://s-bac.github.io/Type-Fast-Type-Correct/" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/jsString.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            JS String Playground &#10024;
+                        </div>
+                        <div class="projDes">
+                            <p>Play around with JS string methods.</p>
+                            <p>User can use both physical and virtual keyboards.</p>
+                        </div>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/JS-String-Playground/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                        <a href="https://s-bac.github.io/JS-String-Playground/" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/Planner.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Planner Calendar &#128467;
+                        </div>
+                        <div class="projDes">
+                            <p>Set custom date via "Set Date" button.</p>
+                            <p>Save Morning and Evening events for the selected date.</p>
+                        </div>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/Planner-Trender/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                        <a href="https://s-bac.github.io/Planner-Trender/" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/ShareShelf.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Share Shelf &#128216;
+                        </div>
+                        <div class="projDes">
+                            <p>Save a booklist and share with friends..</p>
+                        </div>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/Share-Shelf/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                        <a href="https://s-bac.github.io/Share-Shelf/" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/chatSs.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Custom Chats &#128241;
+                        </div>
+                        <div class="projDes">
+                            <p>Customize Messenger Chat SS between business and client</p>
+                        </div>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/ChatScreen-Maker/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                        <a href="https://s-bac.github.io/ChatScreen-Maker/" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/blackJack.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Blackjack &#127183;
+                        </div>
+                        <div class="projDes">
+                            <p>Classic Blackjack Game</p>
+                        </div>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/BlackJack/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                        <a href="https://s-bac.github.io/BlackJack/" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/chatRoom.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Chat Rooms &#128172;
+                        </div>
+                        <div class="projDes">
+                            <p>Not so static.</p>
+                        </div>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/Chat-Rooms/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/classProjects.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Other Mini-projects &#128203;
+                        </div>
+                        <div class="projDes">
+                            <p>Several other projects.</p>
+                        </div>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/Class_Projects" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
         <div class="contactPg">
-
+            <div class="contact flex">
+                <img class="imgContact" src="images/telephone.png" alt="">
+                <p>+959984092084</p>
+            </div>
+            
         </div>
     </div>
     </div>
