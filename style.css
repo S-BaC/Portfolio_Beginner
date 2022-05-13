@@ -52,8 +52,9 @@ body{
     background-color: var(--dark-sea-green);
     width:100%;
     height:500px;
-    border-radius: 10vmin;
+    border-radius: 5vmin;
     box-shadow: 0px 0px 5px #aaa;
+    animation: appear 2s;
 }
 
 
@@ -64,7 +65,7 @@ body{
 }
 .profile{
     gap:5vw;
-    padding-left: 1vw;
+    padding-right: 1vw;
 }
 #name{
     font-size:2.5rem;
@@ -81,8 +82,8 @@ body{
     border: 5px solid var(--blue-sapphire);
 }
 .tabs{
-    margin-left: auto;
-    padding-right: 1vw;
+    margin-right: auto;
+    padding-left: 1vw;
     gap:1vw;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -109,66 +110,120 @@ body{
 .homePg{
     width: 100%;
     height:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 }
-.intro{
-    color:#fff;
-    padding:1vmin 2vw;
-    line-height:7vmin;
-    text-align: center; 
-    font-size: 1.5rem;
+@keyframes appear{
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
-.intro p{
+.col1{
+    border-right: 0.5vmin dotted #eee;
+    padding:3vmin 5vmin 5vmin 3vmin;
+    position: relative;
+}
+.col2{
+  padding:3vmin 5vmin 5vmin 3vmin;  
+}
+.txtTitle{
+    background-color: #eee;
+    border-radius: 15px;
+    display:inline;
+    padding:0 1vmin;
+}
+.items{
+    list-style-type: none;
+    padding:0;
+    line-height: 5vmin;
+}
+.items > li{
+    overflow: hidden;
+    justify-content: flex-start;
+    color:#333;
+    font-weight: 600;
+}
+.txtDes{
+    color:#eee;
+    width: 15vmin;
+}
+.cvForm{
+    box-shadow: 0px 0px 5px #333;
+    cursor: pointer;
+    padding:0 2.5vmin;
     margin:0;
 }
-.langsWrapper{
-    gap:2vmin;
+.imgDes{
+    width:3.9vmin;
+    padding: 1.5vmin 3vmin;
 }
-.langs{}
-.langImg{
-    width:35px;
-    padding:10px;
- }
- #txtProjs{
-     background-color: var(--orange-yellow-crayola);
-     font-weight: 500;
-     padding: 0 2vmin;
-     border-radius: 20px;
-     cursor:pointer;
- }
-#txtCV{
+.javaWrapper{
     background-color: #eee;
-    color:var(--dark-sea-green);
-     font-weight: 700;
-     padding-right: 1vmin;
-     border-radius: 20px;
-     cursor:pointer;
+    border-radius: 50%;
+    width:5vmin;
+    height:5vmin;
+    margin: 1.5vmin 3vmin;
 }
-
-/*
-#txtCS, #txtWebDev, #txtProjects, #txtContact{
-    font-weight: 500;
-    background-color: #eee;
-    padding: 0 0.5vmin;
+.progBG{
+    width:300px;
+    height:10px;
+    background-color: rgba(255, 255, 255, 0.247);
+    border-radius: 10px;
 }
-#txtCS{
-    color:var(--pine-tree);
+.progFG{
+    width:75%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height:10px;
+    animation-duration: 2s;
+    animation-name: progressBarHTMLCSS;
 }
-#txtWebDev{
-    color:#723d46ff;
+@keyframes progressBarHTMLCSS{
+    0%{width:0;}
+    100%{width:75%;}
 }
-#txtProjects{
-    color:var(--orange-yellow-crayola);
-    cursor: pointer;
+@keyframes progressBarJS{
+    0%{width:0;}
+    100%{width:80%;}
 }
-#txtContact{
-    color:var(--sandy-brown);
-    cursor: pointer;
+@keyframes progressBarJava{
+    0%{width:0;}
+    100%{width:39%;}
 }
-#txtSign{
-    font-family:cursive;
+@keyframes progressBarPy{
+    0%{width:0;}
+    100%{width:50%;}
 }
-.txtRight{text-align: right;}
-.txtTopic{font-size: 1.5rem;} */
+#htmlBar{
+    background-color: var(--orange-yellow-crayola);
+}
+#cssBar{
+    background-color: var(--columbia-blue);
+}
+#jsBar{
+    width:80%;
+    background-color: var(--yellow-munsell);
+    animation-name: progressBarJS;
+}
+#javaBar{
+    width:39%;
+    background-color: #ffffff;
+    animation-duration: 1s;
+    animation-name: progressBarJava;
+}
+#pythonBar{
+    width:51%;
+    background-color: var(--peach);
+    animation-duration: 1s;
+    animation-name: progressBarPy;
+}
+.otherTech{
+    margin-top: 1vmin;
+    justify-content: space-evenly;
+}
+.otherTech>img{
+    padding: 1vmin;
+}
 
 /* PROJECTS tab */
 

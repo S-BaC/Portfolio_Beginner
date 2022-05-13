@@ -6,63 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swun</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="jquery.js"></script>
+    <script defer src="app.js"></script>
 </head>
 <body class="flex">
     <div class="wrapper flex col">
     <div class="header flex">
-        <div class="profile flex">
-            <img src="images/profilePic.jpg" alt="Photo" class="profileImg"/>
-            <p id="name"> Swun </p>
-        </div>
         <div class="tabs flex">
             <div class="tab tab1"><p>Home</p></div>
             <div class="tab tab2"><p>Projects</p></div>
             <div class="tab tab3"><p>Contact</p></div>
         </div>
+        <div class="profile flex">
+            <p id="name"> Swun </p>
+            <img src="images/profilePic.jpg" alt="Photo" class="profileImg"/>
+        </div>
+        
     </div>
     <div id="body">
         <div class="homePg">
-            <div class="intro">
-                <!-- <p class="txtTopic"><span id="txtHello">Hello,</span> thanks for checking out!</p>
-                <p>I'm a student of <span id="txtCS">Computer Science</span>, developing skills for <span id="txtWebDev">Web Dev</span>. Please kindly view the <span id="txtProjects">"Projects"</span> section for a full list of my mini-projects. </p>
-                <p>Following is my <span id="txtCV">CV</span> for your reference,  </p>
-                and please feel free to <span id="txtContact">contact</span> me. -->
-                <p> Hello, I am Swun Htet Oo, <br> a student learning Computer Science <br> at <a>University of the People</a>.<br> I am quite proficient in</p>
-                <div class="langsWrapper flex">
-                    <div class="langs flex">
-                        <img src="images/html-5 (2).png" alt="" class="langImg">
-                        <p class="langTxt">HTML,</p>
-                    </div>
-                    <div class="langs flex">
-                        <img src="images/css.png" alt="" class="langImg">
-                        <p class="langTxt">CSS and</p>
-                        </div>
-                    <div class="langs flex">
-                        <img src="images/js.png" alt="" class="langImg">
-                        <p class="langTxt">Javascript.</p>
-                    </div>
-                </div>
-                <p>I can also code in </p>
-                <div class="langsWrapper flex">
-                    <div class="langs flex">
-                        <img src="images/java.png" alt="" class="langImg">
-                        <p class="langTxt">Java and</p>
-                        </div>
-                    <div class="langs flex">
-                        <img src="images/python.png" alt="" class="langImg">
-                        <p class="langTxt">Python.</p>
-                    </div>
-                </div>
-                <div class="langsWrapper flex">
-                    <p>Here are my <span id="txtProjs">Projects</span></p>
-                    <p>and this is my 
-                    <div class="langs flex" id="txtCV">
-                        <img src="images/cv.png" alt="" class="langImg">
-                        <p class="langTxt">CV.</p>
-                    </div>
+            <div class="col1">
+                <p class="txtTitle"> PERSONAL </p>
+                <ul class="items">
+                    <li class="flex"> <div class="txtDes">Name</div><span class="info">Swun Htet Oo</span></li>
+                    <li class="flex"> <div class="txtDes">DOB</div><span class="info">18.08.1998</span></li>
+                    <li class="flex"> <div class="txtDes">Nationality</div>
+                        <span class="info">Myanmar</span></li>
+                </ul>
+                <p class="txtTitle"> EDUCATION </p>
+                <ul class="items">
+                    <li class="flex"> <div class="txtDes">Final Year</div>TU Mandalay</li>
+                    <li class="flex"> <div class="txtDes"></div>(Civil Engineering)</li>
+                    <li class="flex"> <div class="txtDes">Fresher</div>University of the People</li>
+                    <li class="flex"> <div class="txtDes"></div>(Computer Science)</li>
+                </ul>
+                <div class="flex">
+                    <p class="txtTitle cvForm"> Download Full CV </p>
                 </div>
                 
-                
+            </div>
+            <div class="col2">
+                <p class="txtTitle"> LANGUAGES </p>
+                <ul class="items">
+                    <li class="flex"> <div class="flex"><img src="images/html-5.png" alt="" class="imgDes"></div>
+                    <div class="progBG">
+                        <div id="htmlBar" class="progFG"></div>
+                    </div>
+                    </li>
+
+                    <li class="flex"> <div class="flex"><img src="images/css-3.png" alt="" class="imgDes"></div>
+                        <div class="progBG">
+                            <div id="cssBar" class="progFG"></div>
+                        </div>
+                    </li>
+
+                    <li class="flex"> <div class="flex"><img src="images/js.png" alt="" class="imgDes"></div>
+                        <div class="progBG">
+                            <div id="jsBar" class="progFG"></div>
+                        </div>
+                    </li>
+
+                    <li class="flex"> <div class=" javaWrapper flex">
+                        
+                    <img src="images/java.png" alt="" class="imgDes imgJava"></div>
+                        <div class="progBG">
+                            <div id="javaBar" class="progFG"></div>
+                        </div>
+                    </li>
+
+
+                    <li class="flex"> <div class="flex"><img src="images/python.png" alt="" class="imgDes"></div>
+                        <div class="progBG">
+                            <div id="pythonBar" class="progFG"></div>
+                        </div>
+                    </li>
+                </ul>
+
+                <p class="txtTitle"> OTHERS </p>
+                <div class="flex otherTech">
+                    <div class="flex">
+                        <img src="images/icons8-firebase-48.png" alt="" class="imgDes">
+                        <p>Firebase</p>
+                    </div>
+                    <div class="flex">
+                        <img src="images/icons8-jquery-50.png" alt="" class="imgDes">
+                        <p>JQuery</p>
+                    </div>
+                </div>
                 
             </div>
 
