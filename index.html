@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swun</title>
+    <title>Swun's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!-- <script defer src="jquery.js"></script>
     <script defer src="app.js"></script> -->
@@ -13,28 +13,219 @@
     <div class="wrapper flex col">
     <div class="header flex">
         <div class="tabs flex">
-            <div class="tab tab1"><p>Home</p></div>
-            <div class="tab tab2"><p>Projects</p></div>
-            <div class="tab tab3"><p>Contact</p></div>
+            <div class="tab tab1"><a href="#games">Games</a></div>
+            <div class="tab tab2"><a href="#apps">Apps</a></div>
+            <div class="tab tab3"><a href="#about">About</a></div>
         </div>
-        <div class="profile flex">
-            <p id="name"> Swun </p>
-            <img src="images/profilePic.jpg" alt="Photo" class="profileImg"/>
-        </div>
-        
     </div>
     <!-- class="homeBody" -->
     <div id="body" >
-        <div class="homePg">
-            <div class="col1 flex col">
-                <ul class="items">
-                    <li class="flex"> <div class="txtDes">Name</div><span class="info">Swun Htet Oo</span></li>
-                    <li class="flex"> <div class="txtDes">DOB</div><span class="info">18.08.1998</span></li>
-                    <li class="flex"> <div class="txtDes">Nationality</div>
-                        <span class="info">Myanmar</span></li>
-                </ul>
+
+        <div class="projectsPg">
+
+            <div class="projsWrapper">
+                <div class="projCard flex col">
+                    <div>
+                       <img class="projImg"  src="images/blackJack.jpg" alt=""> 
+                    </div>
+                    
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Blackjack &#127183;
+                        </div>
+                        <ul class="projDes">
+                            <li>Blackjack or "21" card game. </li> <li>lilayers can either create an account or use the "Guest Mode".</li> <li>
+                                Betting mechanism and Win-Loss-Draw stats included.</li>
+                              <li><em>Mobile Friendly &#10004;</em></li>  
+                            </ul>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/BlackJack/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                        <a href="https://s-bac.github.io/BlackJack/" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col" id="games">
+                    <img class="projImg" src="images/TicTacConnect.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Tic-Tac-Connect &#128280;
+                        </div>
+                        <ul class="projDes">
+                            <li>Classic Tic-Tac-Toe game with options to customize the board size, <br>from 2x2 to 9x9.</li>
+                            <li>Both multiplayer and two-level single player modes included.</li>
+                            <li><em>Mobile Friendly &#10004;</em></li>
+                        </ul>
+                        <div class="projBtns flex">
+                            <a href="https://github.com/S-BaC/Tic-Tac-Connect/tree/OOP-Stuffs" target="_blank">
+                                <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                            </a>
+                            <a href="https://s-bac.github.io/Tic-Tac-Connect/" target="_blank">
+                                <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 
-                
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/TypingGame.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Type Correct, Type Fast &#128187;
+                        </div>
+                        <ul class="projDes">
+                            <li>A simple typewriter game, <br> in which the player types as many words  and as fast as possible.
+                            </li>
+                            <li>Compatible with keyboard &#10004;</li>
+                        </ul>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/Type-Fast-Type-Correct/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                        <a href="https://s-bac.github.io/Type-Fast-Type-Correct/" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="projCard flex col" id="apps">
+                    <img class="projImg"  src="images/chatRoom.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Chat Rooms &#128172;
+                        </div>
+                        <ul class="projDes">
+                            <li>A chat room app using firebase-firestore. </li>
+                            <li>(Has backend functionalities so doesn't run smoothly on github pages.)</li>
+                        </ul>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/Chat-Rooms/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/YouNotes.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            You_Notes &#128221;
+                        </div>
+                        <ul class="projDes">
+                            <li>Planner for notes + todolist keeping.</li>
+                            <li>User can also write a gratitude journal and set up a yearly "theme".</li>
+                            <li> Data is stored on localStorage only.</li>
+                        </ul>
+                    <div class="flex projBtns">
+                        <a href="https://github.com/S-BaC/YouNote/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                        <a href="https://s-bac.github.io/YouNote/" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/jsString.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            JS String Playground &#10024;
+                        </div>
+                        <ul class="projDes">
+                            <li>A site to play around with Javacript's string methods. </li>
+                            <li>User can use the on-screen virtual keyboard or a physical one.</li>
+                        </ul>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/JS-String-Playground/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                        <a href="https://s-bac.github.io/JS-String-Playground/" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/Planner.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Planner Calendar &#128467;
+                        </div>
+                        <div class="projDes">
+                            <li>Calendar with options to set dates and add events to the day. </li>
+                            <li>Monthly calendar is built dynamically from JS.</li>
+                        </div>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/Planner-Trender/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                        <a href="https://s-bac.github.io/Planner-Trender/" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/chatSs.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Custom Chats &#128241;
+                        </div>
+                        <ul class="projDes">
+                            <li>A messenger mockup-screen with options to customize chats.</li>
+                        </ul>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/ChatScreen-Maker/tree/main" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                        <a href="https://s-bac.github.io/ChatScreen-Maker/" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="projCard flex col">
+                    <img class="projImg"  src="images/classProjects.jpg" alt="">
+                    <div class="projTxt">
+                        <div class="projTitle">
+                            Other Mini-projects &#128203;
+                        </div>
+                        <div class="projDes">
+                            <p>Several other mini-projects  written as part of an assignment.</p>  
+                            <ul>
+                                <li>Frontend projects like Minesweeper, webpack-applied sites, weather-API apps and</li>
+                                <li>JavaSE projects included.</li>  
+                            </ul>
+                        </div>
+                    <div class="projBtns flex">
+                        <a href="https://github.com/S-BaC/Class_Projects" target="_blank">
+                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="contactPg" id="about">
+            <div class="contactCol1">
+                <h1>About</h1>
+                <p>Hi, thanks for checking out!</p>
+                <p>I'm <span id="sho">Swun Htet Oo</span>, a student of <span id="cs">Computer Science</span> .</p>
+                <p>So far, I've been focusing on <span id="webdev">Web Development</span> .</p>
+                <p>Please feel free to reach out by clicking the icons. </p>
+                <p>Have a great day! </p>
+
+            </div>
+            <div class="contactCol2 flex col">
+                <!-- <h3><em>Here's my tech stack, btw:</em></h3> -->
                 <div class="flex col techStack">
                     <div class="stack flex">
                         <div class="flex">
@@ -74,235 +265,36 @@
                     </div>
                 </div>
 
-                <div class="flex">
-                    <p class="txtTitle cvForm"> Full CV </p>
-                </div>
-                
-            </div>
-            <div class="col2">
-                <p>Hi, thanks for checking out.</p>
-                <p>I'm a student of Computer Science and Web Development.</p>
-                <p>Please feel free to take a look at my projects (and maybe play a game or two?)</p>
-                <p>Have a great day!</p>
-                
-                <div class="flex">
-                    <p class="txtTitle cvForm projs"> Projects </p>
-                </div>
-            </div>
+                <div class="contactSection flex">
+                    <div>
+                        <p class="cvForm"> <a href="/data.txt" download>View Full CV</a>  </p>
+                    </div>
+                    <div class="flex">
+                        <a href="https://www.linkedin.com/in/swun-htet-oo/" target="_blank">
+                            <img class="contactIcon" src="images/linkedin (2).png" alt="">
+                        </a>
+                        
+                        <p>linkedin.com/in/swun-htet-oo/</p>
+                    </div>
 
-        </div>
-        <div class="projectsPg">
-
-            <div class="projsWrapper">
-                <div class="projCard flex col">
-                    <img class="projImg" src="images/TicTacConnect.jpg" alt="">
-                    <div class="projTxt">
-                        <div class="projTitle">
-                            Tic-Tac-Connect &#128280;
-                        </div>
-                        <div class="projDes">
-                            Classic tic-tac-toe game with options to:
-                            <ul>
-                                <li>Customize board-size</li>
-                                <li>Play multiplayer mode</li>
-                                <li>Play signle player mode against two different levels.</li>
-                            </ul>
-                        </div>
-                        <div class="projBtns flex">
-                            <a href="https://github.com/S-BaC/Tic-Tac-Connect/tree/OOP-Stuffs" target="_blank">
-                                <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
-                            </a>
-                            <a href="https://s-bac.github.io/Tic-Tac-Connect/" target="_blank">
-                                <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
-                            </a>
-                        </div>
-                    </div>
                 </div>
-                <div class="projCard flex col">
-                    <img class="projImg"  src="images/YouNotes.jpg" alt="">
-                    <div class="projTxt">
-                        <div class="projTitle">
-                            You_Notes &#128221;
-                        </div>
-                        <div class="projDes">
-                            A planner/notepad with functions including:
-                            <ul>
-                                <li>Setting Todo Lists and Projects</li>
-                                <li>Tracking progress</li>
-                                <li>Keeping a gratitude journal</li>
-                                <li>Recording "notes" and "themes"</li>
-                            </ul>
-                        </div>
-                    <div class="flex projBtns">
-                        <a href="https://github.com/S-BaC/YouNote/tree/main" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
+                <div class="contactSection flex">
+                    <div class="phone flex">
+                        <a href="tel:+959984092084" target="_blank">
+                            <img class="contactIcon" src="images/telephone.png" alt="">
                         </a>
-                        <a href="https://s-bac.github.io/YouNote/" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
+                        <p>+959 984092084</p>
+                    </div>
+                    <div class="flex">
+                        <a href="mailto:swunhtetoo@gmail.com" target="_blank">
+                            <img class="contactIcon" src="images/email.png" alt="">
                         </a>
-                    </div>
-                    </div>
-                </div>
-                <div class="projCard flex col">
-                    <img class="projImg"  src="images/TypingGame.jpg" alt="">
-                    <div class="projTxt">
-                        <div class="projTitle">
-                            Type Correct, Type Fast &#128187;
-                        </div>
-                        <div class="projDes">
-                            <p>Type a random set of characters and increase your score.</p>
-                            <p>Built-in stopwatch will record your score/time.</p>
-                        </div>
-                    <div class="projBtns flex">
-                        <a href="https://github.com/S-BaC/Type-Fast-Type-Correct/tree/main" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
-                        </a>
-                        <a href="https://s-bac.github.io/Type-Fast-Type-Correct/" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
-                        </a>
-                    </div>
-                    </div>
-                </div>
-                <div class="projCard flex col">
-                    <img class="projImg"  src="images/jsString.jpg" alt="">
-                    <div class="projTxt">
-                        <div class="projTitle">
-                            JS String Playground &#10024;
-                        </div>
-                        <div class="projDes">
-                            <p>Play around with JS string methods.</p>
-                            <p>User can use both physical and virtual keyboards.</p>
-                        </div>
-                    <div class="projBtns flex">
-                        <a href="https://github.com/S-BaC/JS-String-Playground/tree/main" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
-                        </a>
-                        <a href="https://s-bac.github.io/JS-String-Playground/" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
-                        </a>
-                    </div>
-                    </div>
-                </div>
-                <div class="projCard flex col">
-                    <img class="projImg"  src="images/Planner.jpg" alt="">
-                    <div class="projTxt">
-                        <div class="projTitle">
-                            Planner Calendar &#128467;
-                        </div>
-                        <div class="projDes">
-                            <p>Set custom date via "Set Date" button.</p>
-                            <p>Save Morning and Evening events for the selected date.</p>
-                        </div>
-                    <div class="projBtns flex">
-                        <a href="https://github.com/S-BaC/Planner-Trender/tree/main" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
-                        </a>
-                        <a href="https://s-bac.github.io/Planner-Trender/" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
-                        </a>
-                    </div>
-                    </div>
-                </div>
-                <div class="projCard flex col">
-                    <img class="projImg"  src="images/ShareShelf.jpg" alt="">
-                    <div class="projTxt">
-                        <div class="projTitle">
-                            Share Shelf &#128216;
-                        </div>
-                        <div class="projDes">
-                            <p>Save a booklist and share with friends..</p>
-                        </div>
-                    <div class="projBtns flex">
-                        <a href="https://github.com/S-BaC/Share-Shelf/tree/main" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
-                        </a>
-                        <a href="https://s-bac.github.io/Share-Shelf/" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
-                        </a>
-                    </div>
-                    </div>
-                </div>
-                <div class="projCard flex col">
-                    <img class="projImg"  src="images/chatSs.jpg" alt="">
-                    <div class="projTxt">
-                        <div class="projTitle">
-                            Custom Chats &#128241;
-                        </div>
-                        <div class="projDes">
-                            <p>Customize Messenger Chat SS between business and client</p>
-                        </div>
-                    <div class="projBtns flex">
-                        <a href="https://github.com/S-BaC/ChatScreen-Maker/tree/main" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
-                        </a>
-                        <a href="https://s-bac.github.io/ChatScreen-Maker/" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
-                        </a>
-                    </div>
-                    </div>
-                </div>
-                <div class="projCard flex col">
-                    <img class="projImg"  src="images/blackJack.jpg" alt="">
-                    <div class="projTxt">
-                        <div class="projTitle">
-                            Blackjack &#127183;
-                        </div>
-                        <div class="projDes">
-                            <p>Classic Blackjack Game</p>
-                        </div>
-                    <div class="projBtns flex">
-                        <a href="https://github.com/S-BaC/BlackJack/tree/main" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
-                        </a>
-                        <a href="https://s-bac.github.io/BlackJack/" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-circled-play-50.png" alt="">
-                        </a>
-                    </div>
-                    </div>
-                </div>
-                <div class="projCard flex col">
-                    <img class="projImg"  src="images/chatRoom.jpg" alt="">
-                    <div class="projTxt">
-                        <div class="projTitle">
-                            Chat Rooms &#128172;
-                        </div>
-                        <div class="projDes">
-                            <p>Not so static.</p>
-                        </div>
-                    <div class="projBtns flex">
-                        <a href="https://github.com/S-BaC/Chat-Rooms/tree/main" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
-                        </a>
-                    </div>
-                    </div>
-                </div>
-                <div class="projCard flex col">
-                    <img class="projImg"  src="images/classProjects.jpg" alt="">
-                    <div class="projTxt">
-                        <div class="projTitle">
-                            Other Mini-projects &#128203;
-                        </div>
-                        <div class="projDes">
-                            <p>Several other projects.</p>
-                        </div>
-                    <div class="projBtns flex">
-                        <a href="https://github.com/S-BaC/Class_Projects" target="_blank">
-                            <img class='projBtnImg' src="images/icons8-code-50.png" alt="">
-                        </a>
-                    </div>
+                        
+                        <p>swunhtetoo@gmail.com</p>
                     </div>
                 </div>
 
             </div>
-
-
-        </div>
-        <div class="contactPg">
-            <div class="contact flex">
-                <img class="imgContact" src="images/telephone.png" alt="">
-                <p>+959984092084</p>
-            </div>
-            
         </div>
     </div>
     </div>

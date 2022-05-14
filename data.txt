@@ -6,16 +6,26 @@ Apps
     https://github.com/S-BaC/YouNote/tree/main
     https://s-bac.github.io/YouNote/
 
+    Planner for notes + todolist keeping. The user can also write a gratitude journal and set up a yearly "theme".
+    Data is stored on localStorage only.
+
     ClassWork
     https://github.com/S-BaC/Class_Projects
+
+    Several other mini-projects written as part of an assignment. 
+    Frontend projects like Minesweeper, webpack-applied sites, weather-API apps and JavaSE projects included.
 
     Planner
     https://github.com/S-BaC/Planner-Trender/tree/main
     https://s-bac.github.io/Planner-Trender/
 
+    Calendar with options to set dates and add events to the day. Calendar is built dynamically from JS.
+
     ChatScreenMaker
     https://github.com/S-BaC/ChatScreen-Maker/tree/main
     https://s-bac.github.io/ChatScreen-Maker/
+
+    A messenger mockup-screen with options to customize chats.
 
     ShareShelf
     https://github.com/S-BaC/Share-Shelf/tree/main
@@ -24,10 +34,14 @@ Apps
     Chat rooms (Not static, so not really working)
     https://github.com/S-BaC/Chat-Rooms/tree/main
     https://s-bac.github.io/Chat-Rooms/
+    
+    A chat room app using firebase-firestore. (Has backend functionalities so doesn't run smoothly on github pages.)
 
     JS String Methods
     https://github.com/S-BaC/JS-String-Playground/tree/main
     https://s-bac.github.io/JS-String-Playground/
+
+    A site to play around with Javacript's string methods. User can use the on-screen virtual keyboard or a physical one.
 
 Games
 
@@ -35,13 +49,24 @@ Games
     https://github.com/S-BaC/Tic-Tac-Connect/tree/OOP-Stuffs
     https://s-bac.github.io/Tic-Tac-Connect/
 
+    Classic Tic-Tac-Toe game with options to customize the board size, from 2x2 to 9x9.
+    Both multiplayer and single player modes included.
+    Single player mode can choose between two computer-opponents, one naive and one smart.
+    Mobile Friendly &#10004;
+
     BlackJack
     https://github.com/S-BaC/BlackJack/tree/main
     https://s-bac.github.io/BlackJack/
 
+    Blackjack or "21" card game. Players can either create an account or use the "Guest Mode".
+    Betting mechanism and record-keeping of Win-Loss-Draw included.
+    Mobile Friendly &#10004;
+
     Type Fast, Type Correct
     https://github.com/S-BaC/Type-Fast-Type-Correct/tree/main
     https://s-bac.github.io/Type-Fast-Type-Correct/
-
+    
+    Simple typewriter game, in which the player is given a random set of characters to type correctly. Typing one word wrong will set the score back to 0.
+    Compatible with keyboard &#10004;
     
 
