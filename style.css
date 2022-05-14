@@ -98,6 +98,7 @@ a{
     text-align: center;
     padding:1vmin;
     width:10vw;
+    min-width: 100px;
     max-width: 100px;
     border-radius: 5vmin;
     font-size: 1.2rem;
@@ -265,13 +266,13 @@ a{
     color:#eee;
     box-shadow: 0 0 5px #111;
     background-color: var(--yellow-munsell);
-   
+    
     padding: 5px 15px;
 }
 .cvForm a{
      color:#000 !important;
      font-size: 1.5rem;
-     font-weight: 600;
+     font-weight: 600;text-align: center;
 }
 .cvForm:active, .contactIcon:active{
     transform: scale(0.8);
@@ -282,6 +283,7 @@ a{
 }
 .contactIcon{
     width:2vw;
+    min-width: 30px;
     border-radius: 50%;
     box-shadow: 0 0 5px #111;
     margin-right: 10px;
@@ -301,4 +303,12 @@ a{
         gap:2vh;
         align-items: center;
     }
+}
+
+@media screen and (max-width:400px){
+    .projDes, .contactSection{
+        font-size: 16px;
+    }
+    
+    
 }
