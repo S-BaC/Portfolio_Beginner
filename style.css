@@ -9,14 +9,11 @@
     --orange-yellow-crayola: #f4d35eff;
     --sandy-brown: #ee964bff;
     
-
-
     --tangerine: #f08700ff;
     --orange-web: #f49f0aff;
     --yellow-munsell: #efca08ff;
     --light-sea-green: #00a6a6ff;
     --columbia-blue: #bbdef0ff;
-
    
     --sage: #c9cba3ff;
     --peach: #ffe1a8ff;
@@ -127,9 +124,6 @@ a{
     display: none;
 }
 
-
-
-
 .imgDes{
     width:3.9vmin;
     padding: 1.5vmin 3vmin;
@@ -149,7 +143,6 @@ a{
 .techStack p{
    font-size: 1.2rem;
    color:#333;
-
 }
 
 /* PROJECTS tab */
@@ -213,9 +206,11 @@ a{
     width:100%;
     gap:3vmin;
     justify-content: flex-end;
+    width: 100%;
 }  
 .projBtnImg{
     width:2vw;
+    min-width: 35px;
 }
 .projBtnImg:hover{
     transform: scale(1.2);
