@@ -68,5 +68,27 @@ Games
     
     Simple typewriter game, in which the player is given a random set of characters to type correctly. Typing one word wrong will set the score back to 0.
     Compatible with keyboard &#10004;
-    
 
+    Shinkei
+    https://github.com/S-BaC/Shinkei/tree/main
+    https://s-bac.github.io/Shinkei/
+
+    Classic Memorizing-Cards game.
+    Option to increase the number of cards to 100.
+    Code is flexible enough to allow for various modifications.
+    
+    Database of FreeGames
+    https://github.com/S-BaC/gamesDB/tree/main
+    https://s-bac.github.io/gamesDB/
+
+    A site to view free-to-play PC games.
+    Users can search for games by name or view them by category.
+    Data is fetched via free-to-game API and added on mouse-scroll.
+
+    Teachable Program
+    https://github.com/S-BaC/reGAMEnition/tree/main
+    https://s-bac.github.io/reGAMEnition/
+
+    Inspired by Google's Teachable Machine.
+    User can "train" the program to follow gestures.
+    The website and games will respond to the user's gestures (fed via webcam), without needing other interfaces.
