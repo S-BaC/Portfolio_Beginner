@@ -34,6 +34,7 @@ nav{
     background-color: #eee;
     box-shadow: 0 0 10px #555;
     width:3vw;
+    min-width: 30px;
     height: 100vh;
 }
 
@@ -83,30 +84,6 @@ a{
     font-weight: 700;
     font-size: 2rem;
 }
-/* 
-/* #techStack{
-    border:3px solid #333;
-    width:30%;
-    min-width: 500px;
-    margin: 10vh 0;
-    padding: 0 0 5vmin 0;
-    position: relative;
-    background-color: #eee;
-}
-
-#techStackIcon{
-    height:10vmin;
-    /* margin: auto; */
-    /* position: relative;
-    top:-7vmin; 
-}
-
-.stack{
-    gap:3vmin;
-}
-.imgDes{
-    width:5vmin;
-} */ 
 
 .photos{
     position: relative;
@@ -189,7 +166,6 @@ a{
     gap:2vmin;
     justify-content: space-evenly;
     margin-left: 3vw;
-
     align-items: baseline;
 }
 .projCard{
@@ -352,4 +328,84 @@ a{
 }
 .phone{
     letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width:500px) {
+    nav{
+        overflow: hidden;
+        width:auto;
+        height:30px;
+        position: sticky;
+        top:0;
+        flex-direction: row !important;
+        justify-content: flex-end !important;
+        gap:5vw !important;
+        padding-right: 5vw !important;
+        border-radius: 0;
+    }
+    nav svg{
+        min-width:25px;
+        padding:0; margin:0;
+    }
+    .headers{
+        display: block;
+        width:100%;
+        height:100%;
+        padding-top:10vh;
+        margin:0;
+    }
+    .homeWrapper{
+        padding:0;
+        margin:0; 
+        height:90vh; 
+    }
+    #headerTxt{
+        font-size: 1rem;
+    }
+    #headerName,#shoName, #frontDev{
+        font-size: 1.2rem;
+    }
+    #toProjs{
+        font-size: 1rem;
+    }
+    .slide{
+        top:60vh;
+    }
+    @keyframes sliderAni {
+        0%{
+            right:-10vw;
+        }
+        20%{
+            right:33vw;
+        }
+        50%{
+            right:33vw;
+            /* transform: scale(1.1); */
+        }
+        80%{
+            right:33vw;
+            opacity: 1;
+        }
+        100%{
+            right:100vw;
+            opacity: 0;
+    
+        }
+    }
+    .contactPg{
+        width:100%;
+        height:80vh;
+        padding: 0 2vw;
+        margin: 0;
+    }
+    .wordCloudImg{
+        padding:0;margin:0;
+        display: none;
+    }
+    .contactCol1 p{
+        font-size: 1rem;
+    }
+    .cvForm a{
+        font-size: 1rem;
+    }
 }
